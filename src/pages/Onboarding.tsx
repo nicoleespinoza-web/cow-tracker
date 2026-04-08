@@ -40,16 +40,16 @@ export default function Onboarding() {
       <div className="relative z-10 min-h-screen flex flex-col items-center justify-center px-6 text-center text-white">
         {step === 1 && (
           <div className="max-w-2xl animate-fade-in-up">
-            <div className="text-6xl mb-6">🐄</div>
+            <div className="text-6xl mb-6"></div>
             <h1 className="text-4xl sm:text-5xl font-bold mb-4 leading-tight">
-              Welcome to Cow Saver
+              Welcome to Cow Saver!
             </h1>
             <p className="text-base sm:text-lg leading-relaxed mb-10 text-white/80">
-              Reducing meat — even a little — makes a real difference. No pressure. No judgment. Just you, your choices, and a farm full of very happy cows.
+              Reducing meat, even a little, makes a real difference. No pressure. No judgment. Just you, your choices, and a farm full of happy cows.
             </p>
             <Button
               size="lg"
-              className="w-full max-w-xs rounded-full text-base font-semibold h-14 bg-[#9dbf8c] text-slate-950 hover:bg-[#8ca26d]"
+              className="w-full max-w-xs rounded-full text-base font-semibold h-14 bg-[#9dbf8c] text-white hover:bg-[#8ca26d]"
               onClick={() => setStep(2)}
             >
               Let's go →
