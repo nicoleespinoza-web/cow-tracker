@@ -1,5 +1,4 @@
 import { useApp } from '@/contexts/AppContext';
-import BottomNav from '@/components/BottomNav';
 import { Droplets, Wind, Utensils } from 'lucide-react';
 
 const STATS = [
@@ -38,7 +37,7 @@ export default function Stats() {
   };
 
   return (
-    <div className="min-h-screen bg-background pb-20">
+    <div className="h-full overflow-y-auto bg-background">
       <div className="px-5 pt-5 pb-4">
         <h1 className="text-xl font-bold text-foreground">Your Impact</h1>
         <p className="text-sm text-muted-foreground mt-1">
@@ -70,15 +69,13 @@ export default function Stats() {
         })}
       </div>
 
-      <div className="px-5 mt-6">
+      <div className="px-5 mt-6 pb-6">
         <div className="p-4 bg-sage-light rounded-2xl text-center">
           <p className="text-sm text-secondary-foreground">
             These are honest averages based on published environmental research. Every day counts. 🌱
           </p>
         </div>
       </div>
-
-      <BottomNav />
     </div>
   );
 }
